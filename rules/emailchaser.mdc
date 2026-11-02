@@ -1,0 +1,16 @@
+---
+description: Use the Emailchaser MCP server for cold email work (campaigns, leads, sender mailboxes, deliverability and replies) instead of describing the steps for the user to click through.
+alwaysApply: false
+tags: [cold-email, outreach, sales, mcp]
+---
+
+When the user asks about their cold email campaigns, leads, replies, sender mailboxes or deliverability, do it through the `emailchaser` MCP server.
+
+- Call `confirm_connection` first in a new session, and whenever the user asks you to check the connection.
+- Start a new campaign idea with `copilot_plan` (it reads a company website and drafts an ideal customer profile and a sequence; it creates nothing).
+- A new campaign is a draft until `launch_campaign`. Show the user the sequence, the sender mailboxes and the schedule, and launch only when they say so.
+- `send_reply` and `send_reply_draft` email a real prospect and cannot be recalled: read the draft back to the user and send only on their go.
+- `source_prospects`, `add_lead_finder_prospects`, `create_email_verification_job`, `approve_autopilot_run`, `purchase_credits` and `create_dfy_order` spend credits or money: say what the call costs (use `get_credit_balance` and `plan_autopilot` for the numbers) and wait for the user's go.
+- `search_lead_finder` and `get_audience_size` are free; use them to size an audience before spending anything.
+
+Lead every answer with the number that matters (replies, positive replies, meetings, placement rate, credits left), then the details.

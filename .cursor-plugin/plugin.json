@@ -1,0 +1,10 @@
+{
+  "name": "emailchaser-cold-email",
+  "description": "Run cold email from Cursor with the Emailchaser MCP server: plan a campaign from a website, write the sequence, find and add leads, check deliverability, and answer replies, with 102 tools across campaigns, leads, sender mailboxes, inbox placement and Autopilot.",
+  "version": "1.0.0",
+  "author": { "name": "Emailchaser", "url": "https://www.emailchaser.com" },
+  "homepage": "https://www.emailchaser.com/mcp-server",
+  "logo": "assets/logo.png",
+  "keywords": ["cold-email", "email-outreach", "sales-automation", "lead-generation", "deliverability", "email-warmup", "b2b-leads", "sdr", "mcp"],
+  "license": "MIT"
+}

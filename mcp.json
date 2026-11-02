@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "emailchaser": {
+      "url": "https://app.emailchaser.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:EMAILCHASER_API_KEY}"
+      }
+    }
+  }
+}
